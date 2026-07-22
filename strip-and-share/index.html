@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strip and Share helps privacy-conscious people remove common tracking parameters from links before sharing them. Cleaner links. Less tracking." />
+  <meta name="theme-color" content="#fff8f5" />
+  <title>Strip and Share — Cleaner links. Less tracking.</title>
+
+  <meta property="og:title" content="Strip and Share — Cleaner links. Less tracking." />
+  <meta property="og:description" content="Clean common tracking parameters from links before sharing them." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.younitystudios.com/strip-and-share" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="strip-and-share.css" />
+  <script defer src="strip-and-share.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="product-header" data-header>
+    <div class="shell product-nav">
+      <a class="brand" href="/" aria-label="Younity Studios home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark__y">Y</span>
+          <span class="brand-mark__orbit"></span>
+        </span>
+        <span class="brand-name">Younity <strong>Studios</strong></span>
+      </a>
+
+      <nav aria-label="Strip and Share navigation">
+        <a href="#why">Why it matters</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a class="product-nav__contact" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="product-hero">
+      <div class="product-hero__grid" aria-hidden="true"></div>
+      <div class="product-hero__glow" aria-hidden="true"></div>
+
+      <div class="shell product-hero__layout">
+        <div class="product-hero__copy reveal">
+          <a class="product-family" href="/">
+            <span>From Younity Studios</span>
+          </a>
+
+          <div class="app-title">
+            <span class="app-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M23 25.5l-6.2 6.2a10 10 0 0014.1 14.1l7.3-7.3"/>
+                <path d="M41 38.5l6.2-6.2a10 10 0 00-14.1-14.1l-7.3 7.3"/>
+                <path d="M23.5 40.5l17-17"/>
+                <path d="M13 12l38 40"/>
+                <path d="M10 29H4M16 15l-4-4M29 10V4M51 35h6M48 49l4 4M35 54v6"/>
+              </svg>
+            </span>
+            <p>Strip and Share</p>
+          </div>
+
+          <h1>Cleaner links.<br /><span>Less tracking.</span></h1>
+
+          <p class="product-hero__lead">
+            Strip and Share helps privacy-conscious people clean common tracking
+            parameters from links before sharing them—reducing unnecessary
+            digital traces without complicating the simple act of sharing.
+          </p>
+
+          <div class="product-hero__actions">
+            <a class="button button--coral" href="#how">
+              See how it works
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+            </a>
+            <a class="button button--quiet" href="#why">Why cleaner links matter</a>
+          </div>
+
+          <div class="hero-promise">
+            <span>Paste or share</span>
+            <i aria-hidden="true"></i>
+            <span>Strip tracking</span>
+            <i aria-hidden="true"></i>
+            <span>Share clean</span>
+          </div>
+        </div>
+
+        <div class="product-hero__visual reveal reveal--delay">
+          <div class="phone phone--hero">
+            <div class="phone__speaker"></div>
+            <img src="assets/home.webp" alt="Strip and Share main screen with a field for a link and an action to strip tracking." />
+          </div>
+          <div class="floating-chip floating-chip--one">
+            <span aria-hidden="true">✓</span>
+            Cleaner link
+          </div>
+          <div class="floating-chip floating-chip--two">
+            <span aria-hidden="true">↗</span>
+            Ready to share
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section" id="why">
+      <div class="shell">
+        <div class="section-label reveal">
+          <span>01</span>
+          <p>Why it matters</p>
+        </div>
+
+        <div class="problem-layout">
+          <h2 class="reveal">
+            A link can carry more than the page you intended to share.
+          </h2>
+
+          <div class="problem-copy reveal reveal--delay">
+            <p class="lead">
+              Many URLs contain tracking tags, advertising identifiers, referral
+              tokens and social-sharing parameters.
+            </p>
+            <p>
+              These additions can be used to follow activity across websites,
+              apps, social networks, search engines and advertising platforms.
+              They often make links longer and reveal more than is needed to
+              reach the destination.
+            </p>
+            <p>
+              Strip and Share gives you a straightforward way to remove supported
+              tracking parameters before the link leaves your hands.
+            </p>
+          </div>
+        </div>
+
+        <div class="url-example reveal">
+          <div class="url-example__label">A shared link</div>
+          <div class="url-example__line">
+            <span class="url-keep">example.com/article</span><span class="url-remove">?utm_source=social&amp;utm_campaign=share&amp;ref=profile</span>
+          </div>
+          <div class="url-example__result">
+            <span>Clean destination</span>
+            <strong>example.com/article</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section" id="how">
+      <div class="shell">
+        <div class="section-label section-label--light reveal">
+          <span>02</span>
+          <p>How it works</p>
+        </div>
+
+        <div class="steps-heading reveal">
+          <h2>Share as usual.<br />Clean before it goes.</h2>
+          <p>
+            Strip and Share fits naturally into the way links are already copied,
+            pasted and shared.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-card__number">01</span>
+            <div class="phone phone--step">
+              <div class="phone__speaker"></div>
+              <img src="assets/share-original.webp" alt="Android sharing panel showing a link being shared to Strip and Share." />
+            </div>
+            <div class="step-card__copy">
+              <h3>Send or paste a link</h3>
+              <p>
+                Share a link to Strip and Share from another app, or paste it
+                directly into the link field.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card reveal reveal--delay-1">
+            <span class="step-card__number">02</span>
+            <div class="phone phone--step">
+              <div class="phone__speaker"></div>
+              <img src="assets/clean-result.webp" alt="Strip and Share showing a cleaned link ready to share." />
+            </div>
+            <div class="step-card__copy">
+              <h3>Strip supported tracking</h3>
+              <p>
+                The unnecessary supported parameters are removed while the
+                destination remains available.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card reveal reveal--delay-2">
+            <span class="step-card__number">03</span>
+            <div class="phone phone--step">
+              <div class="phone__speaker"></div>
+              <img src="assets/share-clean.webp" alt="Android sharing panel showing a cleaned link." />
+            </div>
+            <div class="step-card__copy">
+              <h3>Share the cleaner link</h3>
+              <p>
+                Continue to the app or person you intended—with a shorter,
+                cleaner link and less unnecessary tracking.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section" id="privacy">
+      <div class="shell values-layout">
+        <div class="values-copy reveal">
+          <p class="eyebrow">Privacy made practical</p>
+          <h2>Small action.<br />A more conscious digital footprint.</h2>
+          <p>
+            Privacy does not always require complex settings or specialist
+            knowledge. Sometimes it begins with a simple choice made at the
+            moment information is shared.
+          </p>
+          <p>
+            Strip and Share is for people who want more awareness and control
+            over the traces attached to everyday links—away from unnecessary
+            advertising, search and social tracking.
+          </p>
+        </div>
+
+        <div class="values-list">
+          <article class="value reveal">
+            <span>01</span>
+            <div>
+              <h3>Simple by intention</h3>
+              <p>One focused task, presented clearly and without unnecessary clutter.</p>
+            </div>
+          </article>
+          <article class="value reveal">
+            <span>02</span>
+            <div>
+              <h3>Privacy-conscious sharing</h3>
+              <p>Make a more informed choice before passing a link to someone else.</p>
+            </div>
+          </article>
+          <article class="value reveal">
+            <span>03</span>
+            <div>
+              <h3>Useful in everyday life</h3>
+              <p>Designed around the familiar actions of copying, pasting and sharing.</p>
+            </div>
+          </article>
+          <article class="value reveal">
+            <span>04</span>
+            <div>
+              <h3>Honest in scope</h3>
+              <p>Cleaner links can reduce supported tracking parameters; they cannot eliminate every form of tracking on the web.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="interface section">
+      <div class="shell interface-layout">
+        <div class="interface-visual reveal">
+          <div class="phone phone--about">
+            <div class="phone__speaker"></div>
+            <img src="assets/about.webp" alt="About screen for Strip and Share, describing its purpose for privacy-conscious people." />
+          </div>
+        </div>
+
+        <div class="interface-copy reveal reveal--delay">
+          <p class="eyebrow">Focused by design</p>
+          <h2>Everything needed.<br />Nothing fighting for attention.</h2>
+          <p>
+            The experience is deliberately direct: bring in a link, clean it,
+            and share it onwards. Clear language and visible actions keep the
+            purpose understandable at every step.
+          </p>
+          <blockquote>
+            “Strip and Share helps privacy-conscious people clean links before
+            sharing them.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-cta">
+      <div class="shell product-cta__layout">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--light">Strip and Share</p>
+          <h2>Share the destination.<br />Leave more of the tracking behind.</h2>
+        </div>
+        <div class="product-cta__action reveal reveal--delay">
+          <p>
+            Questions about Strip and Share, privacy, licensing or support can
+            be sent through the Younity Studios contact form.
+          </p>
+          <a class="button button--light" href="/contact">
+            Contact Younity Studios
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="product-footer">
+    <div class="shell product-footer__top">
+      <a class="brand brand--footer" href="/">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark__y">Y</span>
+          <span class="brand-mark__orbit"></span>
+        </span>
+        <span class="brand-name">Younity <strong>Studios</strong></span>
+      </a>
+
+      <nav aria-label="Strip and Share legal links">
+        <a href="/strip-and-share/privacy-policy">Privacy policy</a>
+        <a href="/strip-and-share/terms-and-conditions">Terms and conditions</a>
+        <a href="/strip-and-share/license">License</a>
+        <a href="/strip-and-share/copyright">Copyright</a>
+        <a href="/strip-and-share/open-source">Open source</a>
+      </nav>
+    </div>
+
+    <div class="shell product-footer__bottom">
+      <p>Copyright © 2026 Hugo Monteiro. All rights reserved.</p>
+      <p>Strip and Share · A Younity Studios product</p>
+    </div>
+  </footer>
+</body>
+</html>

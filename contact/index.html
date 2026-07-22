@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Younity Studios about general enquiries, sales, technical support or development." />
+  <meta name="theme-color" content="#f7f7f4" />
+  <title>Contact — Younity Studios</title>
+
+  <meta property="og:title" content="Contact — Younity Studios" />
+  <meta property="og:description" content="Get in touch with Younity Studios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.younitystudios.com/contact" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <script defer src="contact.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled">
+    <div class="shell nav-wrap">
+      <a class="brand" href="/" aria-label="Younity Studios home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark__y">Y</span>
+          <span class="brand-mark__orbit"></span>
+        </span>
+        <span class="brand-name">Younity <strong>Studios</strong></span>
+      </a>
+
+      <a class="contact-back" href="/">
+        Back to studio
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5M9 6l-4 4 4 4"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact-page">
+      <div class="contact-page__grid" aria-hidden="true"></div>
+      <div class="contact-page__orb" aria-hidden="true"></div>
+
+      <div class="shell contact-page__layout">
+        <div class="contact-page__intro">
+          <p class="eyebrow">Contact Younity Studios</p>
+          <h1>Start with what you need.</h1>
+          <p class="contact-page__lead">
+            Use the form to get in touch about a general enquiry, sales,
+            technical support or development.
+          </p>
+
+          <div class="contact-page__note">
+            <span class="contact-page__note-mark" aria-hidden="true">YS</span>
+            <div>
+              <h2>One form. The right context.</h2>
+              <p>
+                Selecting a topic helps route your message appropriately once
+                the form processing is connected.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contact-form" action="#" method="post" novalidate>
+            <!-- Replace action="#" with your production form endpoint. -->
+
+            <div class="form-heading">
+              <p class="form-kicker">Send a message</p>
+              <h2>How can we help?</h2>
+            </div>
+
+            <fieldset class="topic-fieldset">
+              <legend>Topic</legend>
+
+              <div class="topic-grid">
+                <label class="topic-option">
+                  <input type="radio" name="topic" value="contact" checked />
+                  <span class="topic-option__content">
+                    <span class="topic-option__title">Contact</span>
+                    <span class="topic-option__description">General questions and enquiries</span>
+                  </span>
+                </label>
+
+                <label class="topic-option">
+                  <input type="radio" name="topic" value="sales" />
+                  <span class="topic-option__content">
+                    <span class="topic-option__title">Sales</span>
+                    <span class="topic-option__description">Commercial and licensing enquiries</span>
+                  </span>
+                </label>
+
+                <label class="topic-option">
+                  <input type="radio" name="topic" value="technical-support" />
+                  <span class="topic-option__content">
+                    <span class="topic-option__title">Technical support</span>
+                    <span class="topic-option__description">Help with a Younity Studios product</span>
+                  </span>
+                </label>
+
+                <label class="topic-option">
+                  <input type="radio" name="topic" value="development" />
+                  <span class="topic-option__content">
+                    <span class="topic-option__title">Development</span>
+                    <span class="topic-option__description">Development-related matters</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <p class="field-error" data-error-for="name"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required />
+                <p class="field-error" data-error-for="email"></p>
+              </div>
+            </div>
+
+            <div class="form-field" data-product-field hidden>
+              <label for="product">Product</label>
+              <select id="product" name="product">
+                <option value="">Select a product</option>
+                <option value="strip-and-share">Strip &amp; Share</option>
+                <option value="reelstitch">ReelStitch</option>
+                <option value="tripsnap">TripSnap</option>
+                <option value="ride-ahead">Ride Ahead</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required />
+              <p class="field-error" data-error-for="subject"></p>
+            </div>
+
+            <div class="form-field">
+              <div class="label-row">
+                <label for="message">Message</label>
+                <span><span data-character-count>0</span>/2000</span>
+              </div>
+              <textarea id="message" name="message" rows="8" maxlength="2000" required></textarea>
+              <p class="field-error" data-error-for="message"></p>
+            </div>
+
+            <label class="consent-field">
+              <input id="privacy" name="privacy" type="checkbox" required />
+              <span>
+                I understand that the information provided will be used to respond
+                to this enquiry, as described in the
+                <a href="/privacy-policy">privacy policy</a>.
+              </span>
+            </label>
+            <p class="field-error" data-error-for="privacy"></p>
+
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="company-website">Company website</label>
+              <input id="company-website" name="company_website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-actions">
+              <button class="button button--primary submit-button" type="submit">
+                Send message
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+              </button>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer contact-footer">
+    <div class="shell footer-bottom">
+      <p>Copyright © 2026 Hugo Monteiro. All rights reserved.</p>
+      <p>Portugal · European Union</p>
+    </div>
+  </footer>
+</body>
+</html>
