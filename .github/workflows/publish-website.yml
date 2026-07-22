@@ -54,7 +54,7 @@ jobs:
             -exec rm -rf {} +
 
       - name: copy static content
-        run: cp -rf * public/
+        run: rsync -av --exclude='public' * ./public/
 
       - name: Commit and push generated site
         working-directory: .
