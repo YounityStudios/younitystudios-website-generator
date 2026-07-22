@@ -56,7 +56,7 @@ jobs:
       - name: copy static content
         run: |
           rsync -av --exclude='public' --exclude '*.md' --exclude 'index-original.html' * ./public/
-
+          echo -e '**Younity Studios - Independent creative engineering studio**\n\n***Crafting software that matters. Thoughtfully engineered. Purposefully designed.***\n\n[https://www.younitystudios.com/](https://www.younitystudios.com/).' > README.md
       - name: Configure Git SSH
         run: |
           git config --global url."git@github.com:".insteadOf "https://github.com/"
