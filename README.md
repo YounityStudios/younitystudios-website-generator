@@ -6,4 +6,4 @@
 
 ## Website Screenshot
 
-![Website screenshot](/assets/images/website-screenshot.jpg "Website Screenshot")
+![Website screenshot](/assets/images/background-logo-hd.png "Website Screenshot")
