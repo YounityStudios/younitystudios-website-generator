@@ -1,0 +1,95 @@
+{
+  "author": "Younity Studios",
+  "comments": {
+    "dependencies": {
+      "go": "project"
+    },
+    "devDependencies": {
+      "@fontsource/mulish": "project",
+      "@fortawesome/fontawesome-free": "project",
+      "autoprefixer": "project",
+      "bootstrap": "project",
+      "eslint": "project",
+      "eslint-config-prettier": "project",
+      "eslint-config-standard": "project",
+      "eslint-plugin-import": "project",
+      "eslint-plugin-n": "project",
+      "eslint-plugin-no-jquery": "project",
+      "eslint-plugin-promise": "project",
+      "feather-icons": "project",
+      "filterizr": "project",
+      "flag-icons": "project",
+      "fuse.js": "project",
+      "highlight.js": "project",
+      "hugo": "project",
+      "hugo-bin": "project",
+      "hugo-installer": "project",
+      "imagesloaded": "project",
+      "include-media": "project",
+      "ityped": "project",
+      "katex": "project",
+      "mark.js": "project",
+      "mermaid": "project",
+      "plyr": "project",
+      "popper.js": "project",
+      "postcss": "project",
+      "postcss-cli": "project"
+    }
+  },
+  "dependencies": {
+    "go": "^3.0.1"
+  },
+  "description": "website @ https://www.younitystudios.com",
+  "devDependencies": {
+    "@fontsource/mulish": "5.2.8",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "autoprefixer": "^10.4.23",
+    "bootstrap": "^5.3.8",
+
+    "eslint": "8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-no-jquery": "^3.1.1",
+    "feather-icons": "^4.29.2",
+    "filterizr": "^2.2.4",
+    "flag-icons": "^7.5.0",
+    "fuse.js": "^7.1.0",
+    "highlight.js": "^11.11.1",
+    "hugo": "^0.0.3",
+    "hugo-bin": "^0.149.2",
+    "hugo-installer": "^4.0.1",
+    "imagesloaded": "^5.0.0",
+    "include-media": "^2.0.0",
+    "ityped": "^1.0.3",
+    "katex": "^0.16.27",
+    "mark.js": "^8.11.1",
+    "mermaid": "^11.12.2",
+    "plyr": "^3.8.3",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  },
+  "keywords": [
+    "younity-studios",
+    "studios",
+    "web",
+    "development",
+    "design",
+    "logos",
+    "creative"
+  ],
+  "license": "ISC",
+  "name": "younitystudios.com",
+  "scripts": {
+    "hugo": "hugo",
+    "hugo:build": "hugo mod clean --all && hugo mod get -u && hugo mod tidy && hugo mod npm pack && npm install && hugo --minify",
+    "hugo:clean": "hugo mod clean --all",
+    "hugo:dev": "hugo mod clean --all && hugo server --minify --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -D",
+    "hugo:modupdate": "hugo mod clean --all && ncu -u && npm install",
+    "hugo:server": "hugo mod clean --all && hugo server --minify --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildFuture --watch --forceSyncStatic --poll 700ms"
+  },
+  "version": "2.0.0"
+}

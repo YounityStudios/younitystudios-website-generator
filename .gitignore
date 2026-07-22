@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Hugo blog
+bin/*
+resources/*
+node_modules/*
+public/*
+.hugo_build.lock

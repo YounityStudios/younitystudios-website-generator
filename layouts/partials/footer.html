@@ -1,0 +1,60 @@
+<footer>
+    <nav>
+        <ul>
+		    <li>
+               <a href="/terms-of-service/">Terms of Service</a>
+            </li>
+		</ul>
+    </nav>
+    <div class="logo h-card">
+        <p>{{ .Site.Title }}</p>
+        <p>© {{ now.Format "2006" }}</p>
+    </div>
+    <nav>
+        <ul>
+		    <li>
+               <a href="/privacy-policy/">Privacy Policy</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+{{ if .IsHome }}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById('header');
+  const heroHeight = document.querySelector('.hero').offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY >= heroHeight) {
+      header.classList.add('fixed');
+      header.style.opacity = 1;
+    } else {
+      header.classList.remove('fixed');
+      // Calculate opacity: 0 at top, 1 at bottom of hero
+      const opacity = scrollY / heroHeight;
+      header.style.opacity = opacity;
+    }
+  });
+});
+</script>
+{{ else }}
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+/*    box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  }
+
+  main {
+    margin-top: 80px; /* adjust to match header height */
+  }
+</style>
+
+{{ end }}

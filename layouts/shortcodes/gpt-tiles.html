@@ -1,0 +1,31 @@
+<div class="gpt-tiles">
+
+&nbsp; {{ .Inner }}
+
+</div>
+<style>
+
+.gpt-tiles{display:flex;flex-direction:column;gap:1.25rem;margin-top:1.5rem}
+
+.gpt-tile{display:grid;grid-template-columns:140px 1fr;gap:1rem;align-items:center;padding:1.25rem;border-radius:16px;background:rgba(127,127,127,.02)}
+
+.gpt-tile--reverse{grid-template-columns:1fr 140px}
+
+.gpt-tile\_\_img{width:140px;height:140px;border-radius:16px;object-fit:cover;border:1px solid rgba(127,127,127,.25)}
+
+.gpt-tile\_\_title{margin:0;font-size:1.25rem;line-height:1.2}
+
+.gpt-tile\_\_desc{margin:.4rem 0 0;opacity:.9}
+
+@media (max-width:720px){
+
+&nbsp; .gpt-tile,.gpt-tile--reverse{grid-template-columns:1fr}
+
+&nbsp; .gpt-tile\_\_img{width:100%;height:220px}
+
+}
+
+</style>
+
+
+

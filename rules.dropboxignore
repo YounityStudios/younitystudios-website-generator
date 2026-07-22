@@ -1,0 +1,12 @@
+# Ignore all node_modules folders recursively
+**/node_modules/
+
+# Ignore common build output folders
+**/dist/
+**/build/
+**/target/
+**/__pycache__/
+
+# Ignore specific file types
+*.log
+*.tmp   
