@@ -56,6 +56,10 @@ jobs:
       - name: copy static content
         run: rsync -av --exclude='public' * ./public/
 
+      - name: Configure Git SSH
+        run: |
+          git config --global url."git@github.com:".insteadOf "https://github.com/"
+
       - name: Commit and push generated site
         working-directory: .
         run: |
