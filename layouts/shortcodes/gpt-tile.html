@@ -1,0 +1,24 @@
+{{- $title := .Get "title" -}}
+{{- $desc := .Get "desc" -}}
+{{- $img := .Get "img" -}}
+{{- $side := .Get "side" | default "left" -}}
+
+<article class="gpt-tile {{ if eq $side "right" }}gpt-tile--reverse{{ end }}">
+  {{ if eq $side "right" }}
+    <div>
+      <h3 class="gpt-tile__title">{{ $title }}</h3>
+      <p class="gpt-tile__desc">{{ $desc }}</p>
+    </div>
+    <div>
+      <img class="gpt-tile__img" src="{{ $img }}" alt="{{ $title }} icon">
+    </div>
+  {{ else }}
+    <div>
+      <img class="gpt-tile__img" src="{{ $img }}" alt="{{ $title }} icon">
+    </div>
+    <div>
+      <h3 class="gpt-tile__title">{{ $title }}</h3>
+      <p class="gpt-tile__desc">{{ $desc }}</p>
+    </div>
+  {{ end }}
+</article>
