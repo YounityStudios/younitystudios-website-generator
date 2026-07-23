@@ -51,7 +51,7 @@ body {
 
 .product-nav__contact {
   padding: 10px 17px;
-  border: 1px solid var(--sas-ink);
+  border: 1px solid var(--ink);
   border-radius: 999px;
 }
 
